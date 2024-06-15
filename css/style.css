@@ -1,5 +1,6 @@
 :root{
     --color_primary: rgb(11, 95, 193);
+    --color_search: #ccc;
 }
 
 /*Sección Etiquetas*/
@@ -8,12 +9,12 @@ body{
     background-color: rgb(250, 228, 205);
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 3rem;
+    padding: 1rem 3rem;
     box-sizing: border-box;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     font-weight: bold;
     padding: 1rem;
@@ -21,10 +22,12 @@ h1{
 
 h3{
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .nav_bar_ui{
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .nav_bar_ui_container{
@@ -33,19 +36,25 @@ h3{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav_bar_ui_left{
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.nav_bar_ui_right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo{
     width: 2rem;
     height: 2rem;
-    margin-right: 0.5rem;
 }
 
 a{
@@ -58,4 +67,50 @@ a{
 
 a:hover{
     color: var(--color_primary);
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color_search);
+    border-radius: 5px;
+    padding: 0px 10px;
+    width: 35%;
+}
+
+.search-container > input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.search-container > input::placeholder{
+    color: var(--color_search);
+    font-size: 0.8rem;
+}
+
+.search_icon{
+    color: var(--color_search);
+    font-size: 0.8rem;
+}
+
+.nav_bar_ui_button{
+    border: 2px solid var(--color_primary);
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 750;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.nav_bar_ui_button:hover{
+    background-color: var(--color_primary);
+    color: white;
+}
+
+.ocultar{
+    display: none;
 }
