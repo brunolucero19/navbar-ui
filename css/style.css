@@ -1,0 +1,61 @@
+:root{
+    --color_primary: rgb(11, 95, 193);
+}
+
+/*Sección Etiquetas*/
+
+body{
+    background-color: rgb(250, 228, 205);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.nav_bar_ui{
+    padding: 1rem;
+}
+
+.nav_bar_ui_container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav_bar_ui_left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+a:hover{
+    color: var(--color_primary);
+}
