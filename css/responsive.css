@@ -1,5 +1,38 @@
 @media (min-width:1281px) and (max-width:1920px){
-    .nav_bar_ui_left{
-        gap: 15%;
+    .nav_bar_ui_container{
+        gap: 10%;
     }
 }
+
+@media (max-width:1024px){
+    .nav_bar_ui_container{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .nav_bar_ui_right{
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+    .nav_bar_ui_left{
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:480px){
+    .nav_bar_ui_container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav_bar_ui_right{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .nav_bar_ui_left{
+        gap: 30px;
+        justify-content: space-between;
+    }
+}
+
+
