@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 :root{
     --color_primary: rgb(11, 95, 193);
     --color_search: #ccc;
@@ -27,29 +32,39 @@ h3{
 
 .nav_bar_ui{
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    width: 90%;
 }
 
 .nav_bar_ui_container{
     background-color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     padding: 0.5rem 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    width: 100%;
 }
 
 .nav_bar_ui_left{
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-grow: 1;
+    gap: 15px;
 }
 
 .nav_bar_ui_right{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
     gap: 10px;
+}
+
+.nav_bar_ui_left_supryze{
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -75,7 +90,7 @@ a:hover{
     border: 1px solid var(--color_search);
     border-radius: 5px;
     padding: 0px 10px;
-    width: 35%;
+    flex-grow: 2;
 }
 
 .search-container > input{
@@ -112,5 +127,5 @@ a:hover{
 }
 
 .ocultar{
-    display: none;
+    visibility: hidden;
 }
